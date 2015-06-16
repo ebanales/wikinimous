@@ -1,0 +1,10 @@
+<h1><%=@article.title%></h1>
+  <p>
+    <%= link_to article_path(@article),
+    method: :delete,
+    data: {confirm: "are you sure?"} do %>
+      <i class="fa fa-trash"></i>
+    <% end %>
+  </p>
+<img src="http://lorempixel.com/800/300" alt="">
+<p><%=@article.content%></p>
